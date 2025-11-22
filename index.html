@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón Peppers | Home</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="bg-white">
+     <header class="sm:flex sm:items center sm:justify-between max-w-screen-xl mx-auto">
+        <div class="flex justify-between items-center p-2">
+        <img src="images/patron_logo.png" width="100" height="100" alt="patron_logo">
+        <a id="hamburgerBtn" class="w-8 h-8 stroke-mygrey-30 cursor-pointer sm:hidden"
+        href="#"><img class="w-6" src="images/hamburger.svg" alt="hamburger"></a>
+    </div>
+
+    <nav id="primaryNav"  class="bg-mygrey-60 sm:pr-2 sm:flex sm:bg-transparent">
+            <a href="index.html" class="navLink text-mysecondary">Home</a>
+            <a href="menu.html" class="navLink">Menu</a>
+            <a href="order.html" class="navLink">Order</a>
+            <a href="profile.html" class="navLink">Profile</a>
+    </nav> 
+    </header>
+
+
+
+<main class="max-w-2xl m-auto">
+    <h1 class="h1">We love our peppers as much as you!</h1>
+    <picture class="w-full relative">
+                <source media="(max-width: 768px)" srcset="images/hero-small.jpg">
+                <source media="(max-width: 1280px) and (max-width: 1099px)" srcset="images/hero-medium.jpg">
+                <source media="(max-width: 1600px)" srcset="images/hero-large.jpg">
+                <img class="w-full h-auto rounded border" src="images/hero-default.jpg" alt="hero"/>
+            <a class= "absolute text-black bottom-4 right-4 bg-red-900 py-2 px-4 rounded border drop-shadow-lg" href="order.html">Order</a>
+</picture> <!-- end of hero -->
+
+    <h2 class="h2">Taste the Difference</h2>
+    <ul class="list">
+        <li><strong>Flavor Explosion:</strong> This fiery little monster is nature's daredevil — small, wrinkled, and deceptively bright. The moment you bite in, it hits like a flashbang: an explosion of searing heat that floods your tongue, climbs up your throat, and sets your sinuses on fire.</li>
+        <li><strong>We've Honed Our Craft:</strong> Fresh off the vine, this pepper carries the pride of patience and sunshine. Its skin glows with a natural sheen — smooth yet firm, still warm from the day's heat. When you twist it free from the stem, there's a satisfying snap and a whiff of green earth and summer air.</li>
+
+
+    <h2 class="h2">We Gotchu</h2>
+         <li><strong>Unmatched Flavor:</strong> Every burrito bursts with bold, layered flavors — from smoky grilled meats to fresh salsas and creamy guacamole, all perfectly balanced in every bite.</li>
+        <li><strong>Fresh, Quality Growing:</strong> Slice it open, and the scent blooms — sweet, crisp, a little grassy. The seeds rattle softly inside like a secret only your garden knows. Each bite is pure flavor — not just heat or spice, but the taste of soil, rain, and care.</li>
+    <h2 class="h2">Prepared With Love</h2>
+        <li><strong>We Love Peppers:</strong> Each mouthful bursts with contrast: the rich, melty cheese that hugs every ingredient; the cool, tangy sour cream that balances the heat; the fresh pop of pico de gallo and buttery guacamole that lift the whole creation into perfection.</li>
+    </ul>
+
+
+
+    <h2 class="h2">Customer Reviews</h2>
+    <div id="lets-go" class="grid gap-2 m-2 sm:grid-cols-2 md:grid-cols-3"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+    <footer>
+        
+    </footer>
+    <script src="js/scripts.js" type="module"></script>
+    <script src="js/reviews.js" type="module"></script>
+</body>
+</html>

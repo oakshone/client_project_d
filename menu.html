@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón Peppers | Order</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="bg-white">
+     <header class="sm:flex sm:items center sm:justify-between max-w-screen-xl mx-auto">
+        <div class="flex justify-between items-center p-2">
+        <img src="images/patron_logo.png" width="100" height="100" alt="patron_logo">
+        <a id="hamburgerBtn" class="w-8 h-8 stroke-mygrey-30 cursor-pointer sm:hidden"
+        href="#"><img class="w-6" src="images/hamburger.svg"></a>
+    </div>
+
+    <nav id="primaryNav"  class="bg-mygrey-60 sm:pr-2 sm:flex sm:bg-transparent">
+            <a href="index.html" class="navLink">Home</a>
+            <a href="menu.html" class="navLink text-mysecondary">Menu</a>
+            <a href="order.html" class="navLink">Order</a>
+            <a href="profile.html" class="navLink">Profile</a>
+    </nav> 
+    </header>
+    <h3>Menu</h3>
+
+    <h3 class="text-rose-900 text-3xl text-center my-4">Peppers</h3>
+        <div id="peppershere" class="grid gap-4 p-2 m-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 max-w-7xl"></div>
+
+        <dialog id="mydialog" class="w-5/6 max-w-96 rounded-md backdrop:backdrop-invert m-auto">
+            <div class="bg-mygrey-5 justify-between flex border-b border-amber-900 px-2 py-2 text-2xl">
+            <h2 class="text-lime-800">Sample Title</h2>
+            <button class="cursor-pointer text-red-700 hover:text-blue-700">X</button>
+            </div>
+            <p id="desc" class="m-2 text-gray-950"></p>
+            <section class="grid grid-cols-2 m-2">
+                <img id="photo">
+                <div>
+                    <p id="desc" class="m-2 text-amber-950 font-normal text-xs"></p>
+                    <p id="calories" class="m-2 text-amber-950 text-xs"></p>
+                    <p id="item" class="m-2 text-amber-950 text-xs"></p>
+                    <p class="m-2 text-amber-950 text-xs">Scoville Levels:</p>
+                    <ul id="scovilles" class="mx-4 mb-4 text-xs"></ul>
+                </div>
+            </section>
+        </dialog>
+        <footer>
+        
+    </footer>
+    <script src="js/menu.js" type="module"></script>

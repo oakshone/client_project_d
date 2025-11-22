@@ -1,0 +1,88 @@
+    @import "tailwindcss";
+    @config "./tailwind.config.js";
+
+@theme {
+    --font-handwrite: "Roboto", sans-serif;
+
+    --breakpoint-sm: 32rem; /* 512 px */
+    --breakpoint-md: 56rem; /* 896 px */
+
+    /* Remove Default Tailwind Colors */
+    --color-*: initial;
+
+    --color-myprimary: #D8DDEC;
+    --color-mysecondary: #DADDCA;
+    --color-myaccent: #EFE6F3;
+    
+    --color-mygrey-0: #ffffff;
+    --color-mygrey-5: #F2F2F2;
+    --color-mygrey-10: #e5e5e5;
+    --color-mygrey-20: #cccccc;
+    --color-mygrey-30: #b3b3b3;
+    --color-mygrey-40: #999999;
+    --color-mygrey-50: #808080;
+    --color-mygrey-60: #666666;
+    --color-mygrey-70: #4d4d4d;
+    --color-mygrey-80: #333333;
+    --color-mygrey-90: #1a1a1a;
+    --color-mygrey-100: #000000;
+
+}
+img {
+    @apply rounded 
+}
+h1 {
+    @apply pr-2 mb-2 border-b text-2xl
+}
+h2 {
+    @apply text-mygrey-50 font-bold text-2xl tracking-wide border-b-2 mt-4
+}
+.list li {
+    @apply p-2 font-light
+}
+.list strong {
+    @apply font-semibold text-mygrey-80
+}
+.headerWrapper {
+    @apply max-w-1 h-auto
+}
+.navLink {  
+    @apply p-2 block 
+}
+
+.navLink a {
+    @apply border 
+}
+h3 {
+    @apply text-mygrey-100 border-b p-2
+}
+/* .imgcheck {
+  display: none;
+} */
+.visible {
+  display: block; 
+}
+form {
+    @apply flex flex-col p-0.5
+}
+input {
+    @apply block border-r border
+}
+.button {
+    @apply m-auto border-mygrey-40 p-1
+}
+.block {
+    @apply flex flex-col
+}
+h3.label {
+    @apply p-2 border-0 text-mygrey-100 
+}
+p {
+    @apply p-2 
+}
+button.button {
+    @apply m-auto border-mygrey-40 
+}
+
+
+

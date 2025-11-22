@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón Peppers | Home</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+     <header class="sm:flex sm:items center sm:justify-between max-w-screen-xl mx-auto">
+        <div class="flex justify-between items-center p-2">
+        <img src="images/patron_logo.png" width="100" height="100" alt="patron_logo">
+        <a id="hamburgerBtn" class="w-8 h-8 stroke-mygrey-30 cursor-pointer sm:hidden"
+        href="#"><img class="w-6" src="images/hamburger.svg"></a>
+    </div>
+
+    <nav id="primaryNav"  class="bg-mygrey-60 sm:pr-2 sm:flex sm:bg-transparent">
+            <a href="index.html" class="navLink">Home</a>
+            <a href="menu.html" class="navLink">Menu</a>
+            <a href="order.html" class="navLink">Order</a>
+            <a href="profile.html" class="navLink text-mysecondary">Profile</a>
+    </nav> 
+    </header>
+    <h3 class="text-center text-xl font-bold">Profile</h3>
+    <main>
+
+        <section id="newProfile" class="hidden">
+            <h4 class="text-2xl p-2 text-mygrey-70 font-semibold ">Create New Profile</h4>
+            <form>
+                <label class="text-mygrey-60 font-medium p-2">
+                    First Name: <input type="text" id="name" autocomplete="name" class="input" required>
+                </label>
+
+                 <label class="text-mygrey-60 font-medium p-2">
+                    Phone: <input type="tel" id="phone" autocomplete="phone" class="input" required>
+                </label>
+
+                 <label class="text-mygrey-60 font-medium p-2">
+                    Email: <input type="email" id="email" autocomplete="email" class="input" required>
+                </label>
+
+                <input class="button" type="submit" value="Create New Profile">
+            </form>
+        </section>
+
+        <!-- Displaying the existing profile from local storage -->
+        <section id="existingProfile" class="hidden">
+            <h4 class="text-2xl text-mygrey-70 font-semibold p-1">Your Patrón Profile</h4>
+            <h3 class="label">Full Name:</h3>
+            <p id="myName" class="text-mygrey-30"></p>
+
+            <h3 class="label">Phone Number:</h3>
+            <p id="myPhone" class="text-mygrey-30"></p>
+
+            <h3 class="label">Email Address:</h3>
+            <p id="myEmail" class="text-mygrey-30"></p>
+
+            <button class="button border-1 border-mygrey-80">Delete My Profile</button>
+        </section>
+</main>
+       <footer>
+        
+    </footer>
+    <script src="js/profile.js" type="module"></script>

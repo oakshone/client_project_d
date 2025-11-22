@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón Peppers | Order</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="bg-white">
+     <header class="sm:flex sm:items center sm:justify-between max-w-screen-xl mx-auto">
+        <div class="flex justify-between items-center p-2">
+        <img src="images/patron_logo.png" width="100" height="100" alt="patron_logo">
+        <a id="hamburgerBtn" class="w-8 h-8 stroke-mygrey-30 cursor-pointer sm:hidden"
+        href="#"><img class="w-6" src="images/hamburger.svg"></a>
+    </div>
+
+    <nav id="primaryNav"  class="bg-mygrey-60 sm:pr-2 sm:flex sm:bg-transparent">
+            <a href="index.html" class="navLink">Home</a>
+            <a href="menu.html" class="navLink">Menu</a>
+            <a href="order.html" class="navLink text-mysecondary">Order</a>
+            <a href="profile.html" class="navLink">Profile</a>
+    </nav> 
+    </header>
+    <h3 class="text-center text-xl font-bold">Order</h3>
+    <div id="peppershere" class="grid gap-4 p-2 m-auto sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-7xl">
+    </div>
+
+    <button class="p-4 text-right bg-mygrey-50 border hover:bg-mygrey-30 rounded-full">Checkout</button>
+
+
+        <footer>
+        
+    </footer>
+    <script src="js/order.js" type="module"></script>
